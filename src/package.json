@@ -2,6 +2,7 @@
   "name": "miniLock",
   "version": "0.0.1",
   "main": "index.html",
+  "inject-js-end": "js/lib/node-webkit/cutcopypaste.js",
   "keywords": [
     "encryption",
     "crypto",
