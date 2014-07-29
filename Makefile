@@ -14,10 +14,10 @@ chrome:
 	@/bin/echo "[miniLock] Chrome build available in release/"
 
 desktop-run:
-	@node_modules/.bin/nwbuild -r -v 0.9.2 src 
+	@node_modules/.bin/nwbuild -r src 
 
 desktop:
 	@mkdir -p release
-	@node_modules/.bin/nwbuild -v 0.9.2 -p win,osx,linux32,linux64\
+	@node_modules/.bin/nwbuild -p win,osx,linux32,linux64\
 	 -o release/ src 
 	@/bin/echo "[miniLock] Desktop build available in release/"

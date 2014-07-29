@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "jshint": "latest",
-    "node-webkit-builder": "latest"
+    "node-webkit-builder": "git+http://github.com/mllrsohn/node-webkit-builder.git"
   },
   "repository": {
     "type": "git",
