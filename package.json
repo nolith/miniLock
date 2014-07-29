@@ -5,7 +5,8 @@
   "directories": {},
   "dependencies": {},
   "devDependencies": {
-    "jshint": "latest"
+    "jshint": "latest",
+    "node-webkit-builder": "latest"
   },
   "repository": {
     "type": "git",
