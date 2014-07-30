@@ -10,11 +10,8 @@ lint:
 chrome:
 	@mkdir -p release
 	@rm -f release/minilock.chrome.zip
-	@cd src/ && zip -q -r9 ../release/minilock.chrome.zip * -x "*/\.*" -x "\.*" -x "package.json" -x "js/lib/node-webkit/*"
+	@cd src/ && zip -q -r9 ../release/minilock.chrome.zip * -x "*/\.*" -x "\.*" -x "js/lib/node-webkit/*"
 	@/bin/echo "[miniLock] Chrome build available in release/"
-
-desktop-run:
-	@node_modules/.bin/nwbuild -r src 
 
 desktop:
 	@mkdir -p release

@@ -37,7 +37,7 @@ $(function() {
 	$(document).on('contextmenu', function(e) {
 		e.preventDefault()
 		//pay attention to node-webkit bug https://github.com/rogerwang/node-webkit/issues/2072
-		if (/^win/.test(process.platform))
+		if (/^win/.test(process.platform) && process.versions['node-webkit'] == "0.10.0")
 			menu.popup(e.originalEvent.screenX, e.originalEvent.screenY)
 		else
 			menu.popup(e.originalEvent.x, e.originalEvent.y)

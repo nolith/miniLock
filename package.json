@@ -19,5 +19,26 @@
     "web"
   ],
   "author": "Nadim Kobeissi <nadim@nadim.computer>",
-  "license": "AGPL3"
+  "license": "AGPL3",
+    "window": {
+    "title": "miniLock",
+    "icon": "src/img/icon128.png",
+    "toolbar": false,
+    "frame": true,
+    "width": 600,
+    "height": 600,
+    "position": "null",
+    "resizable": false
+  },
+  "scripts": {
+	"test": "make lint",
+	"start": "node_modules/.bin/nwbuild -r ."
+  },
+  "webkit": {
+    "plugin": false,
+    "java": false,
+    "page-cache": false
+  },
+  "main": "src/index.html",
+  "inject-js-end": "src/js/lib/node-webkit/cutcopypaste.js"
 }
